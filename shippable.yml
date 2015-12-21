@@ -1,4 +1,4 @@
-build_image: drydock/u14golpls:prod
+build_image: drydock/u14golpls:tip
 
 language: go
 
@@ -24,6 +24,7 @@ before_script:
 script:
   - export GOPATH=$PWD
   - export PATH=$PATH:$GOPATH/bin
+  - echo $GOPATH
   - sudo apt-get install bzr
   - go get github.com/t-yuki/gocover-cobertura
   - go get github.com/onsi/gomega
