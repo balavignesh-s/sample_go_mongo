@@ -1,3 +1,5 @@
+build_image: drydock/u14golall:prod
+
 language: go
 
 go:
